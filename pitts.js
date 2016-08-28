@@ -2,9 +2,18 @@ var container, camera, scene, renderer, controls, clock, model = null;
 var proppeler = null;
 var rudder = null;
 var elevators = null;
+var tl = null;
+var top_left = null;
+var r = null;
+var t = null;
+var body = null;
+var params = {
+    Pitch: 0,
+    Yaw: 0,
+    Roll: 0
+};
 
-init();
-animate();
+window.addEventListener('load', init);
 
 function init() {
 
@@ -107,11 +116,21 @@ function init() {
     });
 
     // Create the automatic trackball controls and related clock
-    controls = new THREE.TrackballControls(camera);
+    // Passing the render context tells the control to only work when
+    // the mouse is over the renderer's domElement (the canvas).
+    controls = new THREE.TrackballControls(camera, renderer.domElement);
     clock = new THREE.Clock();
 
     // Handle window resize events
     window.addEventListener('resize', onWindowResize, false);
+
+    // Create GUI
+    var gui = new dat.GUI(resizable= false);
+    gui.add(params, 'Pitch', -30, 30);
+    gui.add(params, 'Yaw', -30, 30);
+    gui.add(params, 'Roll', -30, 30);
+    gui.open();
+    animate();
 }
 
 function fixModel(object) {
@@ -174,6 +193,49 @@ function fixModel(object) {
 	elevator_surfaces.position.z = -offsetZ;
 	object.add(elevators);
     }
+    top_left = object.getObjectByName('aileron-top-left');
+/*
+    if (top_left) {
+	top_left.name = 'aileron-top-left-surface';
+	top_left.geometry.computeBoundingBox();
+	var offsetX = top_left.geometry.boundingBox.max.x;
+	var offsetY = (top_left.geometry.boundingBox.max.y + top_left.geometry.boundingBox.min.y) / 2;
+	var offsetZ = top_left.geometry.boundingBox.min.z + (top_left.geometry.boundingBox.max.y - top_left.geometry.boundingBox.min.y) / 2;
+	t = new THREE.Group();
+	var helper_t = new THREE.AxisHelper(-2);
+	t.add(top_left);
+	t.add(helper_t);
+	top_left.position.x = -offsetX;
+	top_left.position.y = -offsetY;
+	top_left.position.z = -offsetZ;
+	object.add(t);
+*/
+/*
+	body = object.getObjectByName('fuselage');
+	body.visible = false;
+*/
+/*
+	t = new THREE.Group();
+	var helper_t = new THREE.AxisHelper(-2);
+	t.add(top_left);
+	t.add(helper_t);
+//	t.position.x = offsetX;
+	top_left.position.x = -offsetX;
+//	t.position.y = offsetY;
+	top_left.position.y = -offsetY;
+//	t.position.z = offsetZ;
+//	t.rotation.y = Math.PI * 5.809 / 180;
+	top_left.position.z = -offsetZ;
+	r = new THREE.Group();
+	var helper_r = new THREE.AxisHelper(-2);
+	r.position.x = offsetX;
+	r.position.y = offsetY;
+	r.position.z = offsetZ;
+	r.add(t);
+	r.add(helper_r);
+	object.add(r);
+*/
+//    }
     object.position.set(0, -0.19578, 0.62016);
     return object;
 }
@@ -196,6 +258,14 @@ function render() {
     // Rotate proppeler
     if (proppeler) {
 	proppeler.rotation.z += 0.02;
+    }
+    if (model && elevators) {
+	elevators.rotation.x = params.Pitch * Math.PI / 180.0;
+	model.rotation.x = -params.Pitch * Math.PI / 180.0;
+    }
+    if (model && rudder) {
+	rudder.rotation.y = params.Yaw * Math.PI / 180.0;
+	model.rotation.y = - params.Yaw * Math.PI / 180.0;
     }
     renderer.render(scene, camera);
 }
