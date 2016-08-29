@@ -2,6 +2,7 @@ var container, camera, scene, renderer, controls, clock, model = null;
 var proppeler = null;
 var rudder = null;
 var elevators = null;
+var axis = null;
 var tl = null;
 var top_left = null;
 var r = null;
@@ -10,7 +11,8 @@ var body = null;
 var params = {
     Pitch: 0,
     Yaw: 0,
-    Roll: 0
+    Roll: 0,
+    Axis: true
 };
 
 window.addEventListener('load', init);
@@ -100,8 +102,8 @@ function init() {
     scene.add(skyBox);
 
     // Create small axis helper
-    var axisHelper = new THREE.AxisHelper(5);
-    scene.add(axisHelper);
+    axis = new THREE.AxisHelper(5);
+    scene.add(axis);
 
     // Create model
     var mtlLoader = new THREE.MTLLoader();
@@ -129,6 +131,7 @@ function init() {
     gui.add(params, 'Pitch', -30, 30);
     gui.add(params, 'Yaw', -30, 30);
     gui.add(params, 'Roll', -30, 30);
+    gui.add(params, 'Axis', true).name('Show Axis');
     gui.open();
     animate();
 }
@@ -266,6 +269,9 @@ function render() {
     if (model && rudder) {
 	rudder.rotation.y = params.Yaw * Math.PI / 180.0;
 	model.rotation.y = - params.Yaw * Math.PI / 180.0;
+    }
+    if (axis) {
+	axis.visible = params.Axis;
     }
     renderer.render(scene, camera);
 }
