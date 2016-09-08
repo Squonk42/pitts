@@ -1,3 +1,7 @@
+var name = 'pitts';
+
+var obj = 'models/' + name + '/obj/' + name + '.obj';
+var mtl = 'models/' + name + '/obj/' + name + '.mtl';
 var container, camera, scene, renderer, controls, clock, model = null;
 var proppeler = null;
 var rudder = null;
@@ -45,7 +49,7 @@ function init() {
     scene.add(sun);
 
     // Create water
-    var waterNormals = new THREE.TextureLoader().load('waternormals.jpg');
+    var waterNormals = new THREE.TextureLoader().load('textures/waternormals.jpg');
     waterNormals.wrapS = waterNormals.wrapT = THREE.RepeatWrapping;
     water = new THREE.Water(renderer, camera, scene, {
         textureWidth: 512,
@@ -69,7 +73,7 @@ function init() {
     var cubeMap = new THREE.CubeTexture([]);
     cubeMap.format = THREE.RGBFormat;
     var loader = new THREE.ImageLoader();
-    loader.load('skyboxsun25degtest.png', function (image) {
+    loader.load('textures/skyboxsun25degtest.png', function (image) {
         var getSide = function (x, y) {
             var size = 1024;
             var canvas = document.createElement('canvas');
@@ -107,11 +111,11 @@ function init() {
 
     // Create model
     var mtlLoader = new THREE.MTLLoader();
-    mtlLoader.load('pitts.mtl', function(materials) {
+    mtlLoader.load(mtl, function(materials) {
         materials.preload();
         var objLoader = new THREE.OBJLoader();
         objLoader.setMaterials(materials);
-        objLoader.load('pitts.obj', function (object) {
+        objLoader.load(obj, function (object) {
             model = fixModel(object);
             scene.add(model);
         });
