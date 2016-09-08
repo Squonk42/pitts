@@ -1,0 +1,112 @@
+# Blender MTL File: 'None'
+# Material Count: 10
+
+newmtl Body_Front
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks -1.000000 -1.000000 -1.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd  models/spitfire/textures/Body Front.png
+
+newmtl Cockpit
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks -1.000000 -1.000000 -1.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd  models/spitfire/textures/Cockpit.png
+
+newmtl Glass
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks -1.000000 -1.000000 -1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.560000
+illum 2
+map_Kd  models/spitfire/textures/glass.png
+
+newmtl Left_Wing
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks -1.000000 -1.000000 -1.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd  models/spitfire/textures/Left Wing.png
+
+newmtl Pilot
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks -1.000000 -1.000000 -1.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd  models/spitfire/textures/pilot_uk.png
+
+newmtl Rear
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks -1.000000 -1.000000 -1.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd  models/spitfire/textures/rear.png
+
+newmtl Right_Wing
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks -1.000000 -1.000000 -1.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd  models/spitfire/textures/Right Wing.png
+
+newmtl landing_light
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks -1.000000 -1.000000 -1.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd  models/spitfire/textures/landing light.png
+
+newmtl reflect
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks -1.000000 -1.000000 -1.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd  models/spitfire/textures/ref.png
+
+newmtl wheel_support
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks -1.000000 -1.000000 -1.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd  models/spitfire/textures/Wheel Support.png

@@ -1,0 +1,131 @@
+newmtl Metal
+Ns 13.4951
+Ka 0 0 0
+Kd 0.203922 0.211765 0.262745
+Ks 0.247059 0.247059 0.247059
+d 1
+newmtl CenterConsole
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.6 0.6 0.6
+map_Kd models/starfighter/textures/brstarfighter_controls.jpg
+d 1
+newmtl Chair
+Ns 10
+Ka 0 0 0
+Kd 0.623529 0.623529 0.623529
+Ks 0.247059 0.247059 0.247059
+map_Kd models/starfighter/textures/brstarfighter_chair.jpg
+d 1
+newmtl CenterHull
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.6 0.6 0.6
+map_Kd models/starfighter/textures/brstarfighter_centerhull.jpg
+d 1
+newmtl DarkGlass
+Ns 59.9988
+Ka 0 0 0
+Kd 0.188235 0.188235 0.247059
+Ks 0.560784 0.560784 0.560784
+d 1
+newmtl LowerWings
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.6 0.6 0.6
+map_Kd models/starfighter/textures/brstarfighter_lowerwings.jpg
+d 1
+newmtl TopWings
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.6 0.6 0.6
+map_Kd models/starfighter/textures/brstarfighter_topwings.jpg
+d 1
+newmtl Glass
+Ns 59.9988
+Ka 0 0 0
+Kd 0.188235 0.188235 0.247059
+Ks 0.247059 0.247059 0.247059
+d 0
+newmtl CanopyInt
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.6 0.6 0.6
+map_Kd models/starfighter/textures/brstarfighter_controls.jpg
+d 1
+newmtl Black
+Ns 10
+Ka 0 0 0
+Kd 0.0588235 0.0588235 0.0588235
+Ks 0.247059 0.247059 0.247059
+d 1
+newmtl GunMetal
+Ns 13.4951
+Ka 0 0 0
+Kd 0.12549 0.129412 0.160784
+Ks 0.247059 0.247059 0.247059
+d 1
+newmtl StickMetal
+Ns 13.4951
+Ka 0 0 0
+Kd 0.278431 0.282353 0.305882
+Ks 0.247059 0.247059 0.247059
+d 1
+newmtl StickRubber
+Ns 10
+Ka 0 0 0
+Kd 0 0 0.25098
+Ks 0.184314 0.184314 0.184314
+d 1
+newmtl StickRed
+Ns 10
+Ka 0 0 0
+Kd 0.501961 0 0
+Ks 0.247059 0.247059 0.247059
+d 1
+newmtl StickBlack
+Ns 10
+Ka 0 0 0
+Kd 0.0588235 0.0588235 0.0588235
+Ks 0.247059 0.247059 0.247059
+d 1
+newmtl Cockpit
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.6 0.6 0.6
+map_Kd models/starfighter/textures/brstarfighter_cockpitglass.jpg
+d 1
+newmtl SideControls
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.6 0.6 0.6
+map_Kd models/starfighter/textures/brstarfighter_controls.jpg
+d 1
+newmtl LeftLaser
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.6 0.6 0.6
+map_Kd models/starfighter/textures/brstarfighter_leftlaser.jpg
+d 1
+newmtl Engines
+Ns 10
+Ka 0 0 0
+Kd 0.933333 0.933333 0.933333
+Ks 0.498039 0.498039 0.498039
+map_Kd models/starfighter/textures/brstarfighter_engines.jpg
+d 1
+newmtl RightLaser
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.6 0.6 0.6
+map_Kd models/starfighter/textures/brstarfighter_rightlaser.jpg
+d 1
