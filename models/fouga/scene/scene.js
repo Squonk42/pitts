@@ -243,7 +243,7 @@ function fixModel(object) {
 	object.add(r);
 */
 //    }
-    object.position.set(0, -0.19578, 0.62016);
+    //object.position.set(0, -0.19578, 0.62016);
     return object;
 }
 
@@ -266,16 +266,16 @@ function render() {
     if (proppeler) {
 	proppeler.rotation.z += 0.02;
     }
-    if (model && elevators) {
+    if (elevators) {
 	elevators.rotation.x = params.Pitch * Math.PI / 180.0;
-	model.rotation.x = -params.Pitch * Math.PI / 180.0;
     }
-    if (model && rudder) {
+    if (rudder) {
 	rudder.rotation.y = params.Yaw * Math.PI / 180.0;
-	model.rotation.y = - params.Yaw * Math.PI / 180.0;
     }
     if (model) {
-	model.rotation.z = params.Roll * Math.PI / 180.0;
+	model.rotation.z = -params.Pitch * Math.PI / 180.0;
+	model.rotation.y = - params.Yaw * Math.PI / 180.0;
+	model.rotation.x = params.Roll * Math.PI / 180.0;
     }
     if (axis) {
 	axis.visible = params.Axis;
