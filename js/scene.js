@@ -1,3 +1,7 @@
+var models = ['aircrane', 'antonov', 'bv170', 'canadair', 'clipper', 'dr400',
+	      'f16', 'f80', 'fouga', 'geebee', 'me262', 'p51d', 'pitts',
+	      'rafale', 'spitfire', 'spitfireIIa', 'starfighter'];
+var name = null;
 var container, camera, scene, renderer, controls, clock, model = null;
 var proppeler = null;
 var rudder = null;
@@ -12,7 +16,8 @@ var params = {
     Pitch: 0,
     Yaw: 0,
     Roll: 0,
-    Axis: true
+    Axis: true,
+    Name: 'pitts'
 };
 
 window.addEventListener('load', init);
@@ -30,12 +35,13 @@ function parse() {
 }
 function init() {
 
-    var name = parse();
-    var basename = 'models/' + name + '/obj/' + name;
-    var obj = basename + '.obj';
-    var mtl = basename + '.mtl';
+    name = parse();
+    params.Name = name;
+    var base = 'models/' + name + '/';
+    var obj = name + '.obj';
+    var mtl = name + '.mtl';
     var script = document.createElement('script');
-    script.src = 'models/' + name + '/model.js';
+    script.src = base + '/' + name + '.js';
     document.body.appendChild(script);
 
     // Create an output div container for all our stuff
@@ -126,9 +132,11 @@ function init() {
 
     // Create model
     var mtlLoader = new THREE.MTLLoader();
+    mtlLoader.setPath(base);
     mtlLoader.load(mtl, function(materials) {
         materials.preload();
         var objLoader = new THREE.OBJLoader();
+	objLoader.setPath(base);
         objLoader.setMaterials(materials);
         objLoader.load(obj, function (object) {
             model = fixModel(object);
@@ -147,6 +155,7 @@ function init() {
 
     // Create GUI
     var gui = new dat.GUI(resizable= false);
+    gui.add(params, 'Name', models).name('Model');;
     gui.add(params, 'Pitch', -30, 30);
     gui.add(params, 'Yaw', -30, 30);
     gui.add(params, 'Roll', -30, 30);
@@ -161,6 +170,12 @@ function animate() {
 }
 
 function render() {
+
+    if (name && params.Name != name) {
+	var tmp = [];
+        tmp = window.location.href.split("?");
+	window.location.href = tmp[0] + '?model=' + params.Name;
+    }
 
     // Update the Trackball control 
     var delta = clock.getDelta();

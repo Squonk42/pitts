@@ -12,7 +12,7 @@ d 1.000000
 illum 2
 
 newmtl NoName.001
-Ns 390.196078
+Ns 388.235294
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 1.000000 1.000000 1.000000
@@ -20,11 +20,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/p80WRT.png
-map_d  models/f80/textures/p80WRT.png
+map_Kd textures/p80WRT.png
+map_d  textures/p80WRT.png
 
 newmtl NoName.005
-Ns 390.196078
+Ns 388.235294
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 1.000000 1.000000 1.000000
@@ -32,11 +32,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/P80fuse.png
-map_d  models/f80/textures/P80fuse.png
+map_Kd textures/P80fuse.png
+map_d  textures/P80fuse.png
 
 newmtl NoName.006
-Ns 390.196078
+Ns 388.235294
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 1.000000 1.000000 1.000000
@@ -44,11 +44,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/P80WLT.png
-map_d  models/f80/textures/P80WLT.png
+map_Kd textures/P80WLT.png
+map_d  textures/P80WLT.png
 
 newmtl NoName.010
-Ns 390.196078
+Ns 388.235294
 Ka 0.564706 0.564706 0.564706
 Kd 0.480000 0.621177 0.254118
 Ks 1.000000 1.000000 1.000000
@@ -56,11 +56,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/p80tank.png
-map_d  models/f80/textures/p80tank.png
+map_Kd textures/p80tank.png
+map_d  textures/p80tank.png
 
 newmtl NoName.011
-Ns 390.196078
+Ns 388.235294
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 1.000000 1.000000 1.000000
@@ -68,11 +68,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/p80tank.png
-map_d  models/f80/textures/p80tank.png
+map_Kd textures/p80tank.png
+map_d  textures/p80tank.png
 
 newmtl NoName.013
-Ns 390.196078
+Ns 388.235294
 Ka 0.474510 0.474510 0.474510
 Kd 0.379608 0.379608 0.379608
 Ks 1.000000 1.000000 1.000000
@@ -92,7 +92,7 @@ d 1.000000
 illum 2
 
 newmtl NoName.020
-Ns 390.196078
+Ns 388.235294
 Ka 0.666667 0.666667 0.666667
 Kd 0.533334 0.533334 0.533334
 Ks 1.000000 1.000000 1.000000
@@ -110,8 +110,8 @@ Ke 0.333333 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/P80WLT.png
-map_d  models/f80/textures/P80WLT.png
+map_Kd textures/P80WLT.png
+map_d  textures/P80WLT.png
 
 newmtl NoName.025
 Ns 468.627451
@@ -122,11 +122,11 @@ Ke 0.000000 0.333333 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/p80WRT.png
-map_d  models/f80/textures/p80WRT.png
+map_Kd textures/p80WRT.png
+map_d  textures/p80WRT.png
 
 newmtl NoName.026
-Ns 390.196078
+Ns 388.235294
 Ka 0.966013 0.966013 0.966013
 Kd 0.721569 0.796862 0.800000
 Ks 1.000000 1.000000 1.000000
@@ -144,8 +144,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/P80fuse.png
-map_d  models/f80/textures/P80fuse.png
+map_Kd textures/P80fuse.png
+map_d  textures/P80fuse.png
 
 newmtl ac3dmat0.003
 Ns 0.000000
@@ -176,8 +176,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/P80fuse.png
-map_d  models/f80/textures/P80fuse.png
+map_Kd textures/P80fuse.png
+map_d  textures/P80fuse.png
 
 newmtl ac3dmat1.001
 Ns 78.431373
@@ -188,8 +188,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/P80fuse.png
-map_d  models/f80/textures/P80fuse.png
+map_Kd textures/P80fuse.png
+map_d  textures/P80fuse.png
 
 newmtl ac3dmat1.003
 Ns 78.431373
@@ -200,8 +200,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/p80WRT.png
-map_d  models/f80/textures/p80WRT.png
+map_Kd textures/p80WRT.png
+map_d  textures/p80WRT.png
 
 newmtl ac3dmat1.007
 Ns 78.431373
@@ -212,8 +212,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/P80fuse.png
-map_d  models/f80/textures/P80fuse.png
+map_Kd textures/P80fuse.png
+map_d  textures/P80fuse.png
 
 newmtl ac3dmat1.008
 Ns 78.431373
@@ -234,8 +234,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/f80/textures/P80fuse.png
-map_d  models/f80/textures/P80fuse.png
+map_Kd textures/P80fuse.png
+map_d  textures/P80fuse.png
 
 newmtl ac3dmat12.001
 Ns 78.431373

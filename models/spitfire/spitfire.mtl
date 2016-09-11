@@ -10,7 +10,7 @@ Ke 0.000000 0.000000 0.000000
 Ni -1.000000
 d 1.000000
 illum 2
-map_Kd  models/spitfire/textures/Body Front.png
+map_Kd  textures/Body Front.png
 
 newmtl Cockpit
 Ns 96.078431
@@ -21,7 +21,7 @@ Ke 0.000000 0.000000 0.000000
 Ni -1.000000
 d 1.000000
 illum 2
-map_Kd  models/spitfire/textures/Cockpit.png
+map_Kd  textures/Cockpit.png
 
 newmtl Glass
 Ns 96.078431
@@ -32,7 +32,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 0.560000
 illum 2
-map_Kd  models/spitfire/textures/glass.png
+map_Kd  textures/glass.png
 
 newmtl Left_Wing
 Ns 96.078431
@@ -43,7 +43,7 @@ Ke 0.000000 0.000000 0.000000
 Ni -1.000000
 d 1.000000
 illum 2
-map_Kd  models/spitfire/textures/Left Wing.png
+map_Kd  textures/Left Wing.png
 
 newmtl Pilot
 Ns 96.078431
@@ -54,7 +54,7 @@ Ke 0.000000 0.000000 0.000000
 Ni -1.000000
 d 1.000000
 illum 2
-map_Kd  models/spitfire/textures/pilot_uk.png
+map_Kd  textures/pilot_uk.png
 
 newmtl Rear
 Ns 96.078431
@@ -65,7 +65,7 @@ Ke 0.000000 0.000000 0.000000
 Ni -1.000000
 d 1.000000
 illum 2
-map_Kd  models/spitfire/textures/rear.png
+map_Kd  textures/rear.png
 
 newmtl Right_Wing
 Ns 96.078431
@@ -76,7 +76,7 @@ Ke 0.000000 0.000000 0.000000
 Ni -1.000000
 d 1.000000
 illum 2
-map_Kd  models/spitfire/textures/Right Wing.png
+map_Kd  textures/Right Wing.png
 
 newmtl landing_light
 Ns 96.078431
@@ -87,7 +87,7 @@ Ke 0.000000 0.000000 0.000000
 Ni -1.000000
 d 1.000000
 illum 2
-map_Kd  models/spitfire/textures/landing light.png
+map_Kd  textures/landing light.png
 
 newmtl reflect
 Ns 96.078431
@@ -98,7 +98,7 @@ Ke 0.000000 0.000000 0.000000
 Ni -1.000000
 d 1.000000
 illum 2
-map_Kd  models/spitfire/textures/ref.png
+map_Kd  textures/ref.png
 
 newmtl wheel_support
 Ns 96.078431
@@ -109,4 +109,4 @@ Ke 0.000000 0.000000 0.000000
 Ni -1.000000
 d 1.000000
 illum 2
-map_Kd  models/spitfire/textures/Wheel Support.png
+map_Kd  textures/Wheel Support.png

@@ -1,8 +1,8 @@
 # Blender MTL File: 'None'
-# Material Count: 68
+# Material Count: 67
 
 newmtl .001
-Ns 562.745098
+Ns 560.784314
 Ka 0.600000 0.600000 0.600000
 Kd 0.800000 0.800000 0.800000
 Ks 0.000000 0.000000 0.000000
@@ -10,8 +10,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-05.png
-map_d  models/p51d/textures/p51d-jw-05.png
+map_Kd textures/p51d-jw-05.png
+map_d  textures/p51d-jw-05.png
 
 newmtl CabShinyUndercoat.001
 Ns 249.019608
@@ -22,8 +22,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/rocket-knob.png
-map_d  models/p51d/textures/rocket-knob.png
+map_Kd textures/rocket-knob.png
+map_d  textures/rocket-knob.png
 
 newmtl Default
 Ns 1000.000000
@@ -44,8 +44,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-05.png
-map_d  models/p51d/textures/p51d-jw-05.png
+map_Kd textures/p51d-jw-05.png
+map_d  textures/p51d-jw-05.png
 
 newmtl Default.002
 Ns 1000.000000
@@ -56,8 +56,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-01.png
-map_d  models/p51d/textures/p51d-jw-01.png
+map_Kd textures/p51d-jw-01.png
+map_d  textures/p51d-jw-01.png
 
 newmtl Default.003
 Ns 1000.000000
@@ -68,8 +68,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-02.png
-map_d  models/p51d/textures/p51d-jw-02.png
+map_Kd textures/p51d-jw-02.png
+map_d  textures/p51d-jw-02.png
 
 newmtl Default.004
 Ns 1000.000000
@@ -80,8 +80,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-03.png
-map_d  models/p51d/textures/p51d-jw-03.png
+map_Kd textures/p51d-jw-03.png
+map_d  textures/p51d-jw-03.png
 
 newmtl DefaultWhite
 Ns 500.000000
@@ -92,8 +92,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/armor-seat.png
-map_d  models/p51d/textures/armor-seat.png
+map_Kd textures/armor-seat.png
+map_d  textures/armor-seat.png
 
 newmtl DefaultWhite.000
 Ns 500.000000
@@ -104,11 +104,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/pedels.png
-map_d  models/p51d/textures/pedels.png
+map_Kd textures/pedels.png
+map_d  textures/pedels.png
 
 newmtl DefaultWhite.001
-Ns 296.078431
+Ns 294.117647
 Ka 0.600000 0.600000 0.600000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -116,8 +116,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/ox-duration-placard.png
-map_d  models/p51d/textures/ox-duration-placard.png
+map_Kd textures/ox-duration-placard.png
+map_d  textures/ox-duration-placard.png
 
 newmtl DefaultWhite.002
 Ns 500.000000
@@ -128,11 +128,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/canister.png
-map_d  models/p51d/textures/canister.png
+map_Kd textures/canister.png
+map_d  textures/canister.png
 
 newmtl DefaultWhite.003
-Ns 296.078431
+Ns 294.117647
 Ka 0.600000 0.600000 0.600000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -140,8 +140,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/canopy-release.png
-map_d  models/p51d/textures/canopy-release.png
+map_Kd textures/canopy-release.png
+map_d  textures/canopy-release.png
 
 newmtl DefaultWhite.004
 Ns 500.000000
@@ -152,8 +152,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/floor-center.png
-map_d  models/p51d/textures/floor-center.png
+map_Kd textures/floor-center.png
+map_d  textures/floor-center.png
 
 newmtl DefaultWhite.005
 Ns 500.000000
@@ -164,8 +164,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/canopy-release.png
-map_d  models/p51d/textures/canopy-release.png
+map_Kd textures/canopy-release.png
+map_d  textures/canopy-release.png
 
 newmtl DefaultWhite.006
 Ns 0.000000
@@ -176,8 +176,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/boot.png
-map_d  models/p51d/textures/boot.png
+map_Kd textures/boot.png
+map_d  textures/boot.png
 
 newmtl DefaultWhite.007
 Ns 0.000000
@@ -188,8 +188,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/boot.png
-map_d  models/p51d/textures/boot.png
+map_Kd textures/boot.png
+map_d  textures/boot.png
 
 newmtl DefaultWhite.008
 Ns 500.000000
@@ -200,11 +200,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/air-controls.png
-map_d  models/p51d/textures/air-controls.png
+map_Kd textures/air-controls.png
+map_d  textures/air-controls.png
 
 newmtl DefaultWhite.009
-Ns 296.078431
+Ns 294.117647
 Ka 0.600000 0.600000 0.600000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -212,8 +212,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/engine-limitations.png
-map_d  models/p51d/textures/engine-limitations.png
+map_Kd textures/engine-limitations.png
+map_d  textures/engine-limitations.png
 
 newmtl DefaultWhite.010
 Ns 500.000000
@@ -224,8 +224,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/floor-center.png
-map_d  models/p51d/textures/floor-center.png
+map_Kd textures/floor-center.png
+map_d  textures/floor-center.png
 
 newmtl DefaultWhite.011
 Ns 500.000000
@@ -236,8 +236,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/floor-center.png
-map_d  models/p51d/textures/floor-center.png
+map_Kd textures/floor-center.png
+map_d  textures/floor-center.png
 
 newmtl DefaultWhite.012
 Ns 500.000000
@@ -248,8 +248,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-05.png
-map_d  models/p51d/textures/p51d-jw-05.png
+map_Kd textures/p51d-jw-05.png
+map_d  textures/p51d-jw-05.png
 
 newmtl DefaultWhite.013
 Ns 500.000000
@@ -260,11 +260,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-05.png
-map_d  models/p51d/textures/p51d-jw-05.png
+map_Kd textures/p51d-jw-05.png
+map_d  textures/p51d-jw-05.png
 
 newmtl DefaultWhite.014
-Ns 296.078431
+Ns 294.117647
 Ka 0.600000 0.600000 0.600000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -272,8 +272,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/placards.png
-map_d  models/p51d/textures/placards.png
+map_Kd textures/placards.png
+map_d  textures/placards.png
 
 newmtl DefaultWhite.015
 Ns 500.000000
@@ -284,8 +284,8 @@ Ke 1.000000 1.000000 1.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/cabin-light-plate.png
-map_d  models/p51d/textures/cabin-light-plate.png
+map_Kd textures/cabin-light-plate.png
+map_d  textures/cabin-light-plate.png
 
 newmtl DefaultWhite.016
 Ns 500.000000
@@ -296,11 +296,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/placards.png
-map_d  models/p51d/textures/placards.png
+map_Kd textures/placards.png
+map_d  textures/placards.png
 
 newmtl DefaultWhite.017
-Ns 562.745098
+Ns 560.784314
 Ka 0.600000 0.600000 0.600000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -308,8 +308,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-05.png
-map_d  models/p51d/textures/p51d-jw-05.png
+map_Kd textures/p51d-jw-05.png
+map_d  textures/p51d-jw-05.png
 
 newmtl DefaultWhite.018
 Ns 500.000000
@@ -320,8 +320,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/placards.png
-map_d  models/p51d/textures/placards.png
+map_Kd textures/placards.png
+map_d  textures/placards.png
 
 newmtl DefaultWhite.019
 Ns 500.000000
@@ -342,11 +342,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/landing-gear-lever.png
-map_d  models/p51d/textures/landing-gear-lever.png
+map_Kd textures/landing-gear-lever.png
+map_d  textures/landing-gear-lever.png
 
 newmtl DefaultWhite.021
-Ns 296.078431
+Ns 294.117647
 Ka 0.600000 0.600000 0.600000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -354,8 +354,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/gun-circuit-protectors.png
-map_d  models/p51d/textures/gun-circuit-protectors.png
+map_Kd textures/gun-circuit-protectors.png
+map_d  textures/gun-circuit-protectors.png
 
 newmtl DefaultWhite.022
 Ns 500.000000
@@ -366,8 +366,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/air-controls.png
-map_d  models/p51d/textures/air-controls.png
+map_Kd textures/air-controls.png
+map_d  textures/air-controls.png
 
 newmtl DefaultWhite.023
 Ns 500.000000
@@ -378,11 +378,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/landing-gear-placard.png
-map_d  models/p51d/textures/landing-gear-placard.png
+map_Kd textures/landing-gear-placard.png
+map_d  textures/landing-gear-placard.png
 
 newmtl DefaultWhite.024
-Ns 296.078431
+Ns 294.117647
 Ka 0.600000 0.600000 0.600000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -390,8 +390,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/speed-restrction-placard.png
-map_d  models/p51d/textures/speed-restrction-placard.png
+map_Kd textures/speed-restrction-placard.png
+map_d  textures/speed-restrction-placard.png
 
 newmtl DefaultWhite.025
 Ns 500.000000
@@ -402,8 +402,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/armor-seat.png
-map_d  models/p51d/textures/armor-seat.png
+map_Kd textures/armor-seat.png
+map_d  textures/armor-seat.png
 
 newmtl DefaultWhite.026
 Ns 54.901961
@@ -414,8 +414,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-06.png
-map_d  models/p51d/textures/p51d-jw-06.png
+map_Kd textures/p51d-jw-06.png
+map_d  textures/p51d-jw-06.png
 
 newmtl DefaultWhite.027
 Ns 54.901961
@@ -436,8 +436,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/armor-seat.png
-map_d  models/p51d/textures/armor-seat.png
+map_Kd textures/armor-seat.png
+map_d  textures/armor-seat.png
 
 newmtl DefaultWhite.029
 Ns 54.901961
@@ -448,8 +448,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/armor-seat.png
-map_d  models/p51d/textures/armor-seat.png
+map_Kd textures/armor-seat.png
+map_d  textures/armor-seat.png
 
 newmtl DefaultWhite.030
 Ns 54.901961
@@ -460,8 +460,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/boot.png
-map_d  models/p51d/textures/boot.png
+map_Kd textures/boot.png
+map_d  textures/boot.png
 
 newmtl Grey.001
 Ns 249.019608
@@ -472,8 +472,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/gear-doors.png
-map_d  models/p51d/textures/gear-doors.png
+map_Kd textures/gear-doors.png
+map_d  textures/gear-doors.png
 
 newmtl Material.001
 Ns 47.058824
@@ -484,8 +484,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/armor-seat.png
-map_d  models/p51d/textures/armor-seat.png
+map_Kd textures/armor-seat.png
+map_d  textures/armor-seat.png
 
 newmtl NoName.000
 Ns 1000.000000
@@ -496,8 +496,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-05.png
-map_d  models/p51d/textures/p51d-jw-05.png
+map_Kd textures/p51d-jw-05.png
+map_d  textures/p51d-jw-05.png
 
 newmtl NoName.001
 Ns 1000.000000
@@ -508,8 +508,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/gear-doors.png
-map_d  models/p51d/textures/gear-doors.png
+map_Kd textures/gear-doors.png
+map_d  textures/gear-doors.png
 
 newmtl NoName.002
 Ns 1000.000000
@@ -520,8 +520,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/floor-center.png
-map_d  models/p51d/textures/floor-center.png
+map_Kd textures/floor-center.png
+map_d  textures/floor-center.png
 
 newmtl NoName.003
 Ns 1000.000000
@@ -532,8 +532,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-02.png
-map_d  models/p51d/textures/p51d-jw-02.png
+map_Kd textures/p51d-jw-02.png
+map_d  textures/p51d-jw-02.png
 
 newmtl NoName.004
 Ns 1000.000000
@@ -554,8 +554,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-03.png
-map_d  models/p51d/textures/p51d-jw-03.png
+map_Kd textures/p51d-jw-03.png
+map_d  textures/p51d-jw-03.png
 
 newmtl ac3dmat0.001
 Ns 78.431373
@@ -576,8 +576,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 0.300000
 illum 2
-map_Kd models/p51d/textures/air-controls.png
-map_d  models/p51d/textures/air-controls.png
+map_Kd textures/air-controls.png
+map_d  textures/air-controls.png
 
 newmtl ac3dmat1.002
 Ns 78.431373
@@ -588,8 +588,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/zuni.png
-map_d  models/p51d/textures/zuni.png
+map_Kd textures/zuni.png
+map_d  textures/zuni.png
 
 newmtl ac3dmat1.003
 Ns 78.431373
@@ -600,8 +600,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-05.png
-map_d  models/p51d/textures/p51d-jw-05.png
+map_Kd textures/p51d-jw-05.png
+map_d  textures/p51d-jw-05.png
 
 newmtl ac3dmat1.004
 Ns 78.431373
@@ -612,8 +612,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/placards.png
-map_d  models/p51d/textures/placards.png
+map_Kd textures/placards.png
+map_d  textures/placards.png
 
 newmtl ac3dmat1.005
 Ns 78.431373
@@ -634,8 +634,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/m64.png
-map_d  models/p51d/textures/m64.png
+map_Kd textures/m64.png
+map_d  textures/m64.png
 
 newmtl ac3dmat1.007
 Ns 374.509804
@@ -646,8 +646,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-02.png
-map_d  models/p51d/textures/p51d-jw-02.png
+map_Kd textures/p51d-jw-02.png
+map_d  textures/p51d-jw-02.png
 
 newmtl ac3dmat1.008
 Ns 78.431373
@@ -658,8 +658,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/fuel-return-placard.png
-map_d  models/p51d/textures/fuel-return-placard.png
+map_Kd textures/fuel-return-placard.png
+map_d  textures/fuel-return-placard.png
 
 newmtl ac3dmat1.010
 Ns 78.431373
@@ -680,20 +680,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-05.png
-map_d  models/p51d/textures/p51d-jw-05.png
-
-newmtl ac3dmat3
-Ns 78.431373
-Ka 0.600000 0.600000 0.600000
-Kd 0.000000 0.000000 0.000000
-Ks 0.502000 0.502000 0.502000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 1.000000
-illum 2
-map_Kd models/p51d/textures/p51d-jw-01.png
-map_d  models/p51d/textures/p51d-jw-01.png
+map_Kd textures/p51d-jw-05.png
+map_d  textures/p51d-jw-05.png
 
 newmtl ac3dmat3.005
 Ns 78.431373
@@ -714,8 +702,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-03.png
-map_d  models/p51d/textures/p51d-jw-03.png
+map_Kd textures/p51d-jw-03.png
+map_d  textures/p51d-jw-03.png
 
 newmtl ac3dmat3.007
 Ns 78.431373
@@ -736,8 +724,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-03.png
-map_d  models/p51d/textures/p51d-jw-03.png
+map_Kd textures/p51d-jw-03.png
+map_d  textures/p51d-jw-03.png
 
 newmtl ac3dmat5.003
 Ns 78.431373
@@ -758,8 +746,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/p51d/textures/p51d-jw-03.png
-map_d  models/p51d/textures/p51d-jw-03.png
+map_Kd textures/p51d-jw-03.png
+map_d  textures/p51d-jw-03.png
 
 newmtl ac3dmat6.004
 Ns 78.431373

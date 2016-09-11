@@ -1,8 +1,8 @@
-# Blender MTL File: 'an12.blend'
+# Blender MTL File: 'None'
 # Material Count: 14
 
 newmtl DefaultWhite
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -10,10 +10,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/antonov/textures/texture.png
+map_Kd textures/texture.png
 
 newmtl DefaultWhite_ai.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -21,10 +21,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/antonov/textures/ai.png
+map_Kd textures/ai.png
 
 newmtl DefaultWhite_ai2.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -32,10 +32,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/antonov/textures/ai2.png
+map_Kd textures/ai2.png
 
 newmtl DefaultWhite_alt.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -43,10 +43,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/antonov/textures/alt.png
+map_Kd textures/alt.png
 
 newmtl DefaultWhite_asi.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -54,10 +54,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/antonov/textures/asi.png
+map_Kd textures/asi.png
 
 newmtl DefaultWhite_interior.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -65,10 +65,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/antonov/textures/interior.png
+map_Kd textures/interior.png
 
 newmtl DefaultWhite_panel.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -76,10 +76,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/antonov/textures/panel.png
+map_Kd textures/panel.png
 
 newmtl DefaultWhite_turn.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -87,10 +87,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/antonov/textures/turn.png
+map_Kd textures/turn.png
 
 newmtl DefaultWhite_uap.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -98,10 +98,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/antonov/textures/uap.png
+map_Kd textures/uap.png
 
 newmtl DefaultWhite_uiz.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -109,10 +109,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/antonov/textures/uiz.png
+map_Kd textures/uiz.png
 
 newmtl DefaultWhite_ut7a.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -120,10 +120,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/antonov/textures/ut7a.png
+map_Kd textures/ut7a.png
 
 newmtl DefaultWhite_vsi.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -131,10 +131,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/antonov/textures/vsi.png
+map_Kd textures/vsi.png
 
 newmtl Transparent
-Ns 96.078431
+Ns 94.117647
 Ka 0.500000 0.500000 0.500000
 Kd 0.800000 0.800000 0.800000
 Ks 0.796875 0.796875 0.796875
@@ -144,7 +144,7 @@ d 0.150000
 illum 2
 
 newmtl TransparentExt
-Ns 96.078431
+Ns 94.117647
 Ka 0.500000 0.500000 0.500000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000

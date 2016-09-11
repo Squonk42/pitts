@@ -1,4 +1,4 @@
-# Blender MTL File: 'geebee.blend'
+# Blender MTL File: 'None'
 # Material Count: 20
 
 newmtl DefaultWhite
@@ -10,7 +10,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/r1340.png
+map_Kd textures/r1340.png
 
 newmtl DefaultWhite_alt.png
 Ns 123.529412
@@ -21,7 +21,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/alt.png
+map_Kd textures/alt.png
 
 newmtl DefaultWhite_asi.png
 Ns 123.529412
@@ -32,7 +32,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/asi.png
+map_Kd textures/asi.png
 
 newmtl DefaultWhite_colors.png
 Ns 123.529412
@@ -43,7 +43,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/panel.png
+map_Kd textures/panel.png
 
 newmtl DefaultWhite_colors.png.001
 Ns 123.529412
@@ -54,7 +54,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/switch.png
+map_Kd textures/switch.png
 
 newmtl DefaultWhite_colors.png.002
 Ns 123.529412
@@ -65,7 +65,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/colors.png
+map_Kd textures/colors.png
 
 newmtl DefaultWhite_colors.png.003
 Ns 123.529412
@@ -76,7 +76,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/compass.png
+map_Kd textures/compass.png
 
 newmtl DefaultWhite_fuel.png
 Ns 123.529412
@@ -87,7 +87,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/fuel.png
+map_Kd textures/fuel.png
 
 newmtl DefaultWhite_interior.png
 Ns 123.529412
@@ -98,7 +98,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/interior.png
+map_Kd textures/interior.png
 
 newmtl DefaultWhite_magneto.png
 Ns 123.529412
@@ -109,7 +109,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/magneto.png
+map_Kd textures/magneto.png
 
 newmtl DefaultWhite_oilpressure.png
 Ns 123.529412
@@ -120,7 +120,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/oilpressure.png
+map_Kd textures/oilpressure.png
 
 newmtl DefaultWhite_oiltemp.png
 Ns 123.529412
@@ -131,7 +131,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/oiltemp.png
+map_Kd textures/oiltemp.png
 
 newmtl DefaultWhite_rpm.png
 Ns 123.529412
@@ -142,7 +142,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/rpm.png
+map_Kd textures/rpm.png
 
 newmtl DefaultWhite_texture.png
 Ns 123.529412
@@ -153,7 +153,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/texture.png
+map_Kd textures/texture.png
 
 newmtl DefaultWhite_vsi.png
 Ns 123.529412
@@ -164,7 +164,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/geebee/textures/vsi.png
+map_Kd textures/vsi.png
 
 newmtl ac3dmat1.000
 Ns 17.647059
@@ -187,7 +187,7 @@ d 1.000000
 illum 2
 
 newmtl rouge
-Ns 96.078431
+Ns 94.117647
 Ka 0.333333 0.333333 0.333333
 Kd 0.800000 0.000000 0.000000
 Ks 0.500000 0.500000 0.500000
@@ -207,7 +207,7 @@ d 0.150000
 illum 2
 
 newmtl vert
-Ns 96.078431
+Ns 94.117647
 Ka 0.500653 0.500653 0.500653
 Kd 0.200784 0.800000 0.200784
 Ks 0.500000 0.500000 0.500000

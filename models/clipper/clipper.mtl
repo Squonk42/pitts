@@ -1,8 +1,8 @@
-# Blender MTL File: 'clipper.blend'
+# Blender MTL File: 'None'
 # Material Count: 23
 
 newmtl DefaultWhite
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -10,10 +10,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/dimmer.png
+map_Kd textures/dimmer.png
 
 newmtl DefaultWhite_ai.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -21,10 +21,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/ai.png
+map_Kd textures/ai.png
 
 newmtl DefaultWhite_alt.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -32,10 +32,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/alt.png
+map_Kd textures/alt.png
 
 newmtl DefaultWhite_asi.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -43,10 +43,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/asi.png
+map_Kd textures/asi.png
 
 newmtl DefaultWhite_compass.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -54,10 +54,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/compass.png
+map_Kd textures/compass.png
 
 newmtl DefaultWhite_interior.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -65,10 +65,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/interior.png
+map_Kd textures/interior.png
 
 newmtl DefaultWhite_lamps.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -76,10 +76,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/lamps.png
+map_Kd textures/lamps.png
 
 newmtl DefaultWhite_magneto.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -87,10 +87,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/magneto.png
+map_Kd textures/magneto.png
 
 newmtl DefaultWhite_mainrotor.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -98,10 +98,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/mainrotor.png
+map_Kd textures/mainrotor.png
 
 newmtl DefaultWhite_panel.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -109,10 +109,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/panel.png
+map_Kd textures/panel.png
 
 newmtl DefaultWhite_plug.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -120,10 +120,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/plug.png
+map_Kd textures/plug.png
 
 newmtl DefaultWhite_rpm.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -131,10 +131,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/rpm.png
+map_Kd textures/rpm.png
 
 newmtl DefaultWhite_seat.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -142,10 +142,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/seat.png
+map_Kd textures/seat.png
 
 newmtl DefaultWhite_switch.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -153,10 +153,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/switch.png
+map_Kd textures/switch.png
 
 newmtl DefaultWhite_switch.png.001
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -164,10 +164,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/switch.png
+map_Kd textures/switch.png
 
 newmtl DefaultWhite_tailrotor.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -175,10 +175,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/tailrotor.png
+map_Kd textures/tailrotor.png
 
 newmtl DefaultWhite_texture.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -186,10 +186,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/texture.png
+map_Kd textures/texture.png
 
 newmtl DefaultWhite_texture.png.003
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -197,10 +197,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/texture.png
+map_Kd textures/texture.png
 
 newmtl DefaultWhite_vor.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -208,10 +208,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/vor.png
+map_Kd textures/vor.png
 
 newmtl DefaultWhite_vsi.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.250000 0.250000 0.250000
@@ -219,10 +219,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/clipper/textures/vsi.png
+map_Kd textures/vsi.png
 
 newmtl RougeTrs
-Ns 96.078431
+Ns 94.117647
 Ka 0.500000 0.500000 0.500000
 Kd 0.800000 0.160000 0.160000
 Ks 0.250000 0.250000 0.250000
@@ -232,17 +232,17 @@ d 0.300000
 illum 2
 
 newmtl greentrs
-Ns 96.078431
+Ns 94.117647
 Ka 0.500000 0.500000 0.500000
 Kd 0.160000 0.800000 0.160000
 Ks 0.000000 0.000000 0.000000
 Ke 0.200000 1.000000 0.200000
 Ni 1.000000
 d 0.300000
-illum 1
+illum 2
 
 newmtl transparent
-Ns 96.078431
+Ns 94.117647
 Ka 0.500000 0.500000 0.500000
 Kd 0.437673 0.452499 0.476785
 Ks 0.500000 0.500000 0.500000

@@ -20,7 +20,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd models/pitts/textures/pitts.png
+map_Kd textures/pitts.png
 
 newmtl plexiglass-material
 Ns 233.333333
@@ -41,7 +41,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 0.900000
 illum 1
-map_Kd models/pitts/textures/pitts-proppeler.png
+map_Kd textures/pitts-proppeler.png
 
 newmtl specular-material
 Ns 233.333333
@@ -52,4 +52,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/pitts/textures/pitts.png
+map_Kd textures/pitts.png

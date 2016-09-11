@@ -1,8 +1,8 @@
-# Blender MTL File: 'aircrane.blend'
+# Blender MTL File: 'None'
 # Material Count: 13
 
 newmtl DefaultWhite
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -10,10 +10,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/aircrane/textures/tailrotor.png
+map_Kd textures/tailrotor.png
 
 newmtl DefaultWhite_ai.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -21,10 +21,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/aircrane/textures/ai.png
+map_Kd textures/ai.png
 
 newmtl DefaultWhite_alt.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -32,10 +32,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/aircrane/textures/alt.png
+map_Kd textures/alt.png
 
 newmtl DefaultWhite_asi.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -43,10 +43,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/aircrane/textures/asi.png
+map_Kd textures/asi.png
 
 newmtl DefaultWhite_interior.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -54,10 +54,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/aircrane/textures/interior.png
+map_Kd textures/interior.png
 
 newmtl DefaultWhite_mainrotor.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -65,10 +65,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/aircrane/textures/mainrotor.png
+map_Kd textures/mainrotor.png
 
 newmtl DefaultWhite_panel.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -76,10 +76,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/aircrane/textures/panel.png
+map_Kd textures/panel.png
 
 newmtl DefaultWhite_texture.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -87,10 +87,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/aircrane/textures/texture.png
+map_Kd textures/texture.png
 
 newmtl DefaultWhite_torque.png
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -98,10 +98,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd models/aircrane/textures/torque.png
+map_Kd textures/torque.png
 
 newmtl rougetrans
-Ns 96.078431
+Ns 94.117647
 Ka 0.000000 0.000000 0.000000
 Kd 0.766179 0.050871 0.050871
 Ks 0.500000 0.500000 0.500000
@@ -111,7 +111,7 @@ d 0.500000
 illum 2
 
 newmtl transparent
-Ns 96.078431
+Ns 94.117647
 Ka 0.500000 0.500000 0.500000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -121,7 +121,7 @@ d 0.150000
 illum 2
 
 newmtl transparent2
-Ns 96.078431
+Ns 94.117647
 Ka 0.500000 0.500000 0.500000
 Kd 0.800000 0.800000 0.800000
 Ks 0.078125 0.078125 0.078125
@@ -131,7 +131,7 @@ d 0.300000
 illum 2
 
 newmtl verttrans
-Ns 96.078431
+Ns 94.117647
 Ka 0.000000 0.000000 0.000000
 Kd 0.057229 0.739096 0.246415
 Ks 0.500000 0.500000 0.500000
