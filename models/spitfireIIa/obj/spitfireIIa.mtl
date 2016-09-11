@@ -1,0 +1,214 @@
+# Blender MTL File: 'spitfireIIa.blend'
+# Material Count: 18
+
+newmtl ac3dmat0
+Ns 78.431373
+Ka 0.200000 0.200000 0.200000
+Kd 0.000000 0.000000 0.000000
+Ks 0.502000 0.502000 0.502000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.490000
+illum 2
+map_Kd models/spitfireIIa/textures/spitfire-tx-00.png
+map_d  models/spitfireIIa/textures/spitfire-tx-00.png
+
+newmtl ac3dmat0.001
+Ns 78.431373
+Ka 0.200000 0.200000 0.200000
+Kd 0.000000 0.000000 0.000000
+Ks 0.502000 0.502000 0.502000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.490000
+illum 2
+map_Kd models/spitfireIIa/textures/Pilot_1.png
+map_d  models/spitfireIIa/textures/Pilot_1.png
+
+newmtl ac3dmat0.002
+Ns 78.431373
+Ka 0.200000 0.200000 0.200000
+Kd 0.000000 0.000000 0.000000
+Ks 0.502000 0.502000 0.502000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.490000
+illum 2
+
+newmtl ac3dmat1
+Ns 78.431373
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/spitfire-tx-00.png
+map_d  models/spitfireIIa/textures/spitfire-tx-00.png
+
+newmtl ac3dmat1.001
+Ns 937.254902
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.502000 0.502000 0.502000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/spitfire-tx-05.png
+map_d  spitfire-tx-05.png
+
+newmtl ac3dmat1.002
+Ns 78.431373
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/spitfire-tx-05.png
+map_d  spitfire-tx-05.png
+
+newmtl ac3dmat1.003
+Ns 78.431373
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/Pilot_1.png
+map_d  Pilot_1.png
+
+newmtl ac3dmat1.004
+Ns 780.392157
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/Pilot_2.png
+map_d  Pilot_2.png
+
+newmtl ac3dmat1.005
+Ns 78.431373
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/Pilot_2.png
+map_d  Pilot_2.png
+
+newmtl ac3dmat1.007
+Ns 937.254902
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.502000 0.502000 0.502000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/spitfire-tx-00.png
+map_d  spitfire-tx-00.png
+
+newmtl ac3dmat1.008
+Ns 78.431373
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/hunter__a.png
+map_d  hunter__a.png
+
+newmtl ac3dmat1.009
+Ns 78.431373
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/spitfire-tx-00.png
+map_d  spitfire-tx-00.png
+
+newmtl ac3dmat1.011
+Ns 937.254902
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.502000 0.502000 0.502000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/spitfire-tx-01.png
+map_d  spitfire-tx-01.png
+
+newmtl ac3dmat1.012
+Ns 78.431373
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/spitfire-tx-01.png
+map_d  spitfire-tx-01.png
+
+newmtl ac3dmat1.013
+Ns 937.254902
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.502000 0.502000 0.502000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/spitfire-tx-02.png
+map_d  spitfire-tx-02.png
+
+newmtl ac3dmat1.015
+Ns 78.431373
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.250000
+illum 2
+map_Kd models/spitfireIIa/textures/spitfire-tx-04.png
+map_d  spitfire-tx-04.png
+
+newmtl ac3dmat12
+Ns 78.431373
+Ka 0.200000 0.200000 0.200000
+Kd 0.213334 0.213334 0.213334
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd models/spitfireIIa/textures/large-bezel.png
+map_d  large-bezel.png
+
+newmtl ac3dmat14
+Ns 1000.000000
+Ka 0.200000 0.200000 0.200000
+Kd 0.640000 0.640000 0.640000
+Ks 0.502000 0.502000 0.502000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.098000
+illum 2
