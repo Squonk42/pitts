@@ -173,6 +173,7 @@ function render() {
 
     if (name && params.Name != name) {
 	var tmp = [];
+	name = params.Name;
         tmp = window.location.href.split("?");
 	window.location.href = tmp[0] + '?model=' + params.Name;
     }
