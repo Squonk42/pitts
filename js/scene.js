@@ -1,5 +1,5 @@
 var models = ['aircrane', 'antonov', 'bv170', 'canadair', 'clipper', 'dr400',
-	      'f16', 'f80', 'fouga', 'geebee', 'me262', 'p51d', 'pitts',
+	      'f16', 'f80', 'fouga', 'geebee', 'me262', 'p38', 'p51d', 'pitts',
 	      'rafale', 'spitfire', 'spitfireIIa', 'starfighter'];
 var name = null;
 var container, camera, scene, renderer, controls, clock, model = null;
