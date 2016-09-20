@@ -197,6 +197,9 @@ function render() {
     if (rudder) {
 	rudder.rotation.y = params.Yaw * Math.PI / 180.0;
     }
+    if (top_left) {
+	top_left.rotation.x = -params.Roll * Math.PI / 180.0;
+    }
     if (model) {
 	model.rotation.x = -params.Pitch * Math.PI / 180.0;
 	model.rotation.y = - params.Yaw * Math.PI / 180.0;
