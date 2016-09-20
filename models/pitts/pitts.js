@@ -42,25 +42,6 @@ function fixModel(object) {
     }
 
     // Create an elevators group containing the elevator surfaces
-/*
-    var elevator_surfaces = object.getObjectByName('elevators');
-    if (elevator_surfaces) {
-	elevator_surfaces.name = 'elevator-surfaces';
-	elevator_surfaces.geometry.computeBoundingBox();
-	var offsetX = 0.0;
-	var offsetY = (elevator_surfaces.geometry.boundingBox.min.y +
-		       elevator_surfaces.geometry.boundingBox.max.y) / 2;
-	var offsetZ = elevator_surfaces.geometry.boundingBox.min.z;
-	elevators = new THREE.Group();
-	elevators.name = 'elevators';
-	elevators.add(elevator_surfaces);
-	elevators.position.y = offsetY;
-	elevator_surfaces.position.y = -offsetY;
-	elevators.position.z = offsetZ;
-	elevator_surfaces.position.z = -offsetZ;
-	object.add(elevators);
-    }
-*/
     elevators = object.getObjectByName('elevators');
     if (elevators) {
 	elevators.geometry.computeBoundingBox();
@@ -87,7 +68,8 @@ function fixModel(object) {
     }
 
     top_left = object.getObjectByName('aileron-top-left');
-    if (top_left) {
+    top_right = object.getObjectByName('aileron-top-right');
+    if (top_left && top_right) {
 	top_left.geometry.computeBoundingBox();
 	var offsetX = top_left.geometry.boundingBox.max.x;
 	var offsetY = (top_left.geometry.boundingBox.max.y +
@@ -98,22 +80,84 @@ function fixModel(object) {
 	var angleX = 0.0;
 	var angleY = 0.1;
 	var angleZ = 0.0065;
-	var group = new THREE.Group();
+
+	var left_group = new THREE.Group();
 	top_left.geometry.translate(-offsetX, -offsetY, -offsetZ);
 	top_left.geometry.rotateX(-angleX);
 	top_left.geometry.rotateY(-angleY);
 	top_left.geometry.rotateZ(-angleZ);
-	group.translateX(offsetX);
-	group.translateY(offsetY);
-	group.translateZ(offsetZ);
-	group.rotation.x = angleX;
-	group.rotation.Y = angleY;
-	group.rotation.z = angleZ;
-	group.add(top_left);
-	object.add(group);
 
-//	body = object.getObjectByName('fuselage');
-//	body.visible = false;
+	// THREE.Object3D.translate() has been removed.
+	left_group.translateX(offsetX);
+	left_group.translateY(offsetY);
+	left_group.translateZ(offsetZ);
+	left_group.rotateX(angleX);
+	left_group.rotateY(angleY);
+	left_group.rotateZ(angleZ);
+	left_group.add(top_left);
+	object.add(left_group);
+
+	var right_group = new THREE.Group();
+	top_right.geometry.translate(offsetX, -offsetY, -offsetZ);
+	top_right.geometry.rotateX(angleX);
+	top_right.geometry.rotateY(angleY);
+	top_right.geometry.rotateZ(angleZ);
+
+	// THREE.Object3D.translate() has been removed.
+	right_group.translateX(-offsetX);
+	right_group.translateY(offsetY);
+	right_group.translateZ(offsetZ);
+	right_group.rotateX(-angleX);
+	right_group.rotateY(-angleY);
+	right_group.rotateZ(-angleZ);
+	right_group.add(top_right);
+	object.add(right_group);
+    }
+    bottom_left = object.getObjectByName('aileron-bottom-left');
+    bottom_right = object.getObjectByName('aileron-bottom-right');
+    if (bottom_left && bottom_right) {
+	bottom_left.geometry.computeBoundingBox();
+	var offsetX = bottom_left.geometry.boundingBox.max.x;
+	var offsetY = (bottom_left.geometry.boundingBox.max.y +
+		       bottom_left.geometry.boundingBox.min.y) / 2;
+	var offsetZ = bottom_left.geometry.boundingBox.min.z +
+	    (bottom_left.geometry.boundingBox.max.y -
+	     bottom_left.geometry.boundingBox.min.y) / 2;
+	var angleX = 0.0;
+	var angleY = -0.02;
+	var angleZ = -0.02;
+
+	var left_group = new THREE.Group();
+	bottom_left.geometry.translate(-offsetX, -offsetY, -offsetZ);
+	bottom_left.geometry.rotateX(-angleX);
+	bottom_left.geometry.rotateY(-angleY);
+	bottom_left.geometry.rotateZ(-angleZ);
+
+	// THREE.Object3D.translate() has been removed.
+	left_group.translateX(offsetX);
+	left_group.translateY(offsetY);
+	left_group.translateZ(offsetZ);
+	left_group.rotateX(angleX);
+	left_group.rotateY(angleY);
+	left_group.rotateZ(angleZ);
+	left_group.add(bottom_left);
+	object.add(left_group);
+
+	var right_group = new THREE.Group();
+	bottom_right.geometry.translate(offsetX, -offsetY, -offsetZ);
+	bottom_right.geometry.rotateX(angleX);
+	bottom_right.geometry.rotateY(angleY);
+	bottom_right.geometry.rotateZ(angleZ);
+
+	// THREE.Object3D.translate() has been removed.
+	right_group.translateX(-offsetX);
+	right_group.translateY(offsetY);
+	right_group.translateZ(offsetZ);
+	right_group.rotateX(-angleX);
+	right_group.rotateY(-angleY);
+	right_group.rotateZ(-angleZ);
+	right_group.add(bottom_right);
+	object.add(right_group);
     }
     //object.position.set(0, -0.19578, 0.62016);
     return object;

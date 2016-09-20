@@ -10,6 +10,9 @@ var elevators = null;
 var axis = null;
 var tl = null;
 var top_left = null;
+var top_right = null;
+var bottom_left = null;
+var bottom_right = null;
 var r = null;
 var t = null;
 var body = null;
@@ -198,7 +201,16 @@ function render() {
 	rudder.rotation.y = params.Yaw * Math.PI / 180.0;
     }
     if (top_left) {
-	top_left.rotation.x = -params.Roll * Math.PI / 180.0;
+    	top_left.rotation.x = -params.Roll * Math.PI / 180.0;
+    }
+    if (top_right) {
+    	top_right.rotation.x = params.Roll * Math.PI / 180.0;
+    }
+    if (bottom_left) {
+    	bottom_left.rotation.x = -params.Roll * Math.PI / 180.0;
+    }
+    if (bottom_right) {
+    	bottom_right.rotation.x = params.Roll * Math.PI / 180.0;
     }
     if (model) {
 	model.rotation.x = -params.Pitch * Math.PI / 180.0;
