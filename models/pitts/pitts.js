@@ -52,17 +52,20 @@ function fixModel(object) {
 	var angleX = 0.0;
 	var angleY = 0.0;
 	var angleZ = 0.0;
+
 	var group = new THREE.Group();
 	elevators.geometry.translate(-offsetX, -offsetY, -offsetZ);
 	elevators.geometry.rotateX(-angleX);
 	elevators.geometry.rotateY(-angleY);
 	elevators.geometry.rotateZ(-angleZ);
+
+	// THREE.Object3D.translate() has been removed.
 	group.translateX(offsetX);
 	group.translateY(offsetY);
 	group.translateZ(offsetZ);
-	group.rotation.x = angleX;
-	group.rotation.Y = angleY;
-	group.rotation.z = angleZ;
+	group.rotateX(angleX);
+	group.rotateY(angleY);
+	group.rotateZ(angleZ);
 	group.add(elevators);
 	object.add(group);
     }
