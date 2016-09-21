@@ -3,19 +3,7 @@ var models = ['a4', 'aircrane', 'antonov', 'bv170', 'canadair', 'clipper',
 	      'p51d', 'pitts', 'rafale', 'spitfire', 'spitfireIIa',
 	      'spitfiremkVb', 'starfighter', 'zlin50lx'];
 var name = null;
-var container, camera, scene, renderer, controls, clock, model = null;
-var proppeler = null;
-var rudder = null;
-var elevators = null;
-var axis = null;
-var tl = null;
-var top_left = null;
-var top_right = null;
-var bottom_left = null;
-var bottom_right = null;
-var r = null;
-var t = null;
-var body = null;
+var container, camera, scene, renderer, controls, clock, model = null, axis = null;
 var params = {
     Pitch: 0,
     Yaw: 0,
@@ -143,7 +131,11 @@ function init() {
 	objLoader.setPath(base);
         objLoader.setMaterials(materials);
         objLoader.load(obj, function (object) {
-            model = fixModel(object);
+	    if (typeof fixModel == 'function') {
+		model = fixModel(object);
+	    } else {
+		model = object;
+	    }
             scene.add(model);
         });
     });
@@ -174,7 +166,6 @@ function animate() {
 }
 
 function render() {
-
     if (name && params.Name != name) {
 	var tmp = [];
 	name = params.Name;
@@ -190,33 +181,19 @@ function render() {
     water.material.uniforms.time.value += 1.0 / 100.0;
     water.render();
 
-    // Rotate proppeler
-    if (proppeler) {
-	proppeler.rotation.z += 0.02;
+    // Render model
+    if (typeof renderModel == 'function') {
+	renderModel(model);
     }
-    if (elevators) {
-	elevators.rotation.x = params.Pitch * Math.PI / 180.0;
-    }
-    if (rudder) {
-	rudder.rotation.y = params.Yaw * Math.PI / 180.0;
-    }
-    if (top_left) {
-    	top_left.rotation.x = -params.Roll * Math.PI / 180.0;
-    }
-    if (top_right) {
-    	top_right.rotation.x = params.Roll * Math.PI / 180.0;
-    }
-    if (bottom_left) {
-    	bottom_left.rotation.x = -params.Roll * Math.PI / 180.0;
-    }
-    if (bottom_right) {
-    	bottom_right.rotation.x = params.Roll * Math.PI / 180.0;
-    }
+
+    // Rotate model
     if (model) {
 	model.rotation.x = -params.Pitch * Math.PI / 180.0;
 	model.rotation.y = - params.Yaw * Math.PI / 180.0;
 	model.rotation.z = params.Roll * Math.PI / 180.0;
     }
+
+    // Render axis
     if (axis) {
 	axis.visible = params.Axis;
     }
@@ -227,4 +204,23 @@ function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+function pivotAxis(parent, child, origin, direction) {
+    var group = new THREE.Group();
+    child.geometry.translate(-origin.x, -origin.y, -origin.z);
+    child.geometry.rotateX(-direction.x);
+    child.geometry.rotateY(-direction.y);
+    child.geometry.rotateZ(-direction.z);
+
+    // THREE.Object3D.translate() has been removed.
+    group.translateX(origin.x);
+    group.translateY(origin.y);
+    group.translateZ(origin.z);
+    group.rotateX(direction.x);
+    group.rotateY(direction.y);
+    group.rotateZ(direction.z);
+    group.add(child);
+    parent.add(group);
+    return parent;
 }

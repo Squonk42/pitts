@@ -1,3 +1,6 @@
-function fixModel(object) {
-    return object;
+function fixModel(model) {
+    return model;
+}
+
+function renderModel(model) {
 }

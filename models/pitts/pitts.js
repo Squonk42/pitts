@@ -1,10 +1,18 @@
-function fixModel(object) {
+var proppeler = null;
+var rudder = null;
+var elevators = null;
+var top_left = null;
+var top_right = null;
+var bottom_left = null;
+var bottom_right = null;
+
+function fixModel(model) {
 
     var offset;
 
     // Create a proppeler group containing the nose and blades
-    var blades = object.getObjectByName('proppeler');
-    var nose = object.getObjectByName('nose');
+    var blades = model.getObjectByName('proppeler');
+    var nose = model.getObjectByName('nose');
     if (blades && nose) {
 	offset = nose.geometry.center();
         proppeler = new THREE.Group();
@@ -13,7 +21,7 @@ function fixModel(object) {
 	blades.position.set(offset.x, offset.y, offset.z);
         proppeler.add(nose);
         proppeler.add(blades);
-        object.add(proppeler);
+        model.add(proppeler);
 
         // For rendering blades on both sides
         if (blades.material) {
@@ -22,9 +30,9 @@ function fixModel(object) {
     }
 
     // Create a rudder group containing the rudder surface, rear landing gear and wheel
-    var rudder_surface = object.getObjectByName('rudder');
-    var rear_landing_gear = object.getObjectByName('rear-landing-gear');
-    var rear_landing_gear_wheel = object.getObjectByName('rear-landing-gear-wheel');
+    var rudder_surface = model.getObjectByName('rudder');
+    var rear_landing_gear = model.getObjectByName('rear-landing-gear');
+    var rear_landing_gear_wheel = model.getObjectByName('rear-landing-gear-wheel');
     if (rudder_surface && rear_landing_gear && rear_landing_gear_wheel) {
 	rudder_surface.name = 'rudder-surface';
 	rudder_surface.geometry.computeBoundingBox();
@@ -38,130 +46,89 @@ function fixModel(object) {
 	rudder_surface.position.z = -offset;
 	rear_landing_gear.position.z = -offset;
 	rear_landing_gear_wheel.position.z = -offset;
-	object.add(rudder);
+	model.add(rudder);
     }
 
-    // Create an elevators group containing the elevator surfaces
-    elevators = object.getObjectByName('elevators');
+    // Add a pivot axis for the elevators
+    elevators = model.getObjectByName('elevators');
     if (elevators) {
 	elevators.geometry.computeBoundingBox();
-	var offsetX = 0.0;
-	var offsetY = (elevators.geometry.boundingBox.min.y +
-		       elevators.geometry.boundingBox.max.y) / 2;
-	var offsetZ = elevators.geometry.boundingBox.min.z;
-	var angleX = 0.0;
-	var angleY = 0.0;
-	var angleZ = 0.0;
-
-	var group = new THREE.Group();
-	elevators.geometry.translate(-offsetX, -offsetY, -offsetZ);
-	elevators.geometry.rotateX(-angleX);
-	elevators.geometry.rotateY(-angleY);
-	elevators.geometry.rotateZ(-angleZ);
-
-	// THREE.Object3D.translate() has been removed.
-	group.translateX(offsetX);
-	group.translateY(offsetY);
-	group.translateZ(offsetZ);
-	group.rotateX(angleX);
-	group.rotateY(angleY);
-	group.rotateZ(angleZ);
-	group.add(elevators);
-	object.add(group);
+	var origin = new THREE.Vector3(
+	    0.0,
+	    (elevators.geometry.boundingBox.min.y +
+	     elevators.geometry.boundingBox.max.y) / 2,
+	    elevators.geometry.boundingBox.min.z);
+	var direction = new THREE.Vector3(0.0, 0.0, 0.0);
+	model = pivotAxis(model, elevators, origin, direction);
     }
 
-    top_left = object.getObjectByName('aileron-top-left');
-    top_right = object.getObjectByName('aileron-top-right');
+    // Add pivot axis for all ailerons
+    top_left = model.getObjectByName('aileron-top-left');
+    top_right = model.getObjectByName('aileron-top-right');
     if (top_left && top_right) {
 	top_left.geometry.computeBoundingBox();
-	var offsetX = top_left.geometry.boundingBox.max.x;
-	var offsetY = (top_left.geometry.boundingBox.max.y +
-		       top_left.geometry.boundingBox.min.y) / 2;
-	var offsetZ = top_left.geometry.boundingBox.min.z +
+	var origin = new THREE.Vector3(
+	    top_left.geometry.boundingBox.max.x,
+	    (top_left.geometry.boundingBox.max.y +
+	     top_left.geometry.boundingBox.min.y) / 2,
+	    top_left.geometry.boundingBox.min.z +
 	    (top_left.geometry.boundingBox.max.y -
-	     top_left.geometry.boundingBox.min.y) / 2;
-	var angleX = 0.0;
-	var angleY = 0.1;
-	var angleZ = 0.0065;
-
-	var left_group = new THREE.Group();
-	top_left.geometry.translate(-offsetX, -offsetY, -offsetZ);
-	top_left.geometry.rotateX(-angleX);
-	top_left.geometry.rotateY(-angleY);
-	top_left.geometry.rotateZ(-angleZ);
-
-	// THREE.Object3D.translate() has been removed.
-	left_group.translateX(offsetX);
-	left_group.translateY(offsetY);
-	left_group.translateZ(offsetZ);
-	left_group.rotateX(angleX);
-	left_group.rotateY(angleY);
-	left_group.rotateZ(angleZ);
-	left_group.add(top_left);
-	object.add(left_group);
-
-	var right_group = new THREE.Group();
-	top_right.geometry.translate(offsetX, -offsetY, -offsetZ);
-	top_right.geometry.rotateX(angleX);
-	top_right.geometry.rotateY(angleY);
-	top_right.geometry.rotateZ(angleZ);
-
-	// THREE.Object3D.translate() has been removed.
-	right_group.translateX(-offsetX);
-	right_group.translateY(offsetY);
-	right_group.translateZ(offsetZ);
-	right_group.rotateX(-angleX);
-	right_group.rotateY(-angleY);
-	right_group.rotateZ(-angleZ);
-	right_group.add(top_right);
-	object.add(right_group);
+	     top_left.geometry.boundingBox.min.y) / 2);
+	var direction = new THREE.Vector3(0.0, 0.1, 0.0065);
+	model = pivotAxis(model, top_left, origin, direction);
+	origin.x = -origin.x;
+	direction.negate();
+	model = pivotAxis(model, top_right, origin, direction);
     }
-    bottom_left = object.getObjectByName('aileron-bottom-left');
-    bottom_right = object.getObjectByName('aileron-bottom-right');
+    bottom_left = model.getObjectByName('aileron-bottom-left');
+    bottom_right = model.getObjectByName('aileron-bottom-right');
     if (bottom_left && bottom_right) {
 	bottom_left.geometry.computeBoundingBox();
-	var offsetX = bottom_left.geometry.boundingBox.max.x;
-	var offsetY = (bottom_left.geometry.boundingBox.max.y +
-		       bottom_left.geometry.boundingBox.min.y) / 2;
-	var offsetZ = bottom_left.geometry.boundingBox.min.z +
-	    (bottom_left.geometry.boundingBox.max.y -
-	     bottom_left.geometry.boundingBox.min.y) / 2;
-	var angleX = 0.0;
-	var angleY = -0.02;
-	var angleZ = -0.02;
-
-	var left_group = new THREE.Group();
-	bottom_left.geometry.translate(-offsetX, -offsetY, -offsetZ);
-	bottom_left.geometry.rotateX(-angleX);
-	bottom_left.geometry.rotateY(-angleY);
-	bottom_left.geometry.rotateZ(-angleZ);
-
-	// THREE.Object3D.translate() has been removed.
-	left_group.translateX(offsetX);
-	left_group.translateY(offsetY);
-	left_group.translateZ(offsetZ);
-	left_group.rotateX(angleX);
-	left_group.rotateY(angleY);
-	left_group.rotateZ(angleZ);
-	left_group.add(bottom_left);
-	object.add(left_group);
-
-	var right_group = new THREE.Group();
-	bottom_right.geometry.translate(offsetX, -offsetY, -offsetZ);
-	bottom_right.geometry.rotateX(angleX);
-	bottom_right.geometry.rotateY(angleY);
-	bottom_right.geometry.rotateZ(angleZ);
-
-	// THREE.Object3D.translate() has been removed.
-	right_group.translateX(-offsetX);
-	right_group.translateY(offsetY);
-	right_group.translateZ(offsetZ);
-	right_group.rotateX(-angleX);
-	right_group.rotateY(-angleY);
-	right_group.rotateZ(-angleZ);
-	right_group.add(bottom_right);
-	object.add(right_group);
+	var origin = new THREE.Vector3(
+	    bottom_left.geometry.boundingBox.max.x,
+	    (bottom_left.geometry.boundingBox.max.y +
+	     bottom_left.geometry.boundingBox.min.y) / 2,
+	    bottom_left.geometry.boundingBox.min.z +
+		(bottom_left.geometry.boundingBox.max.y -
+		 bottom_left.geometry.boundingBox.min.y) / 2);
+	var direction = new THREE.Vector3(0.0, -0.02, -0.02);
+	model = pivotAxis(model, bottom_left, origin, direction);
+	origin.x = -origin.x;
+	direction.negate();
+	model = pivotAxis(model, bottom_right, origin, direction);
     }
-    //object.position.set(0, -0.19578, 0.62016);
-    return object;
+    //model.position.set(0, -0.19578, 0.62016);
+    return model;
+}
+
+function renderModel(model) {
+
+    // Rotate proppeler
+    if (proppeler) {
+	proppeler.rotation.z += 0.02;
+    }
+
+    // Rotate elevators
+    if (elevators) {
+	elevators.rotation.x = params.Pitch * Math.PI / 180.0;
+    }
+
+    // Rotate rudder and rear landing gear
+    if (rudder) {
+	rudder.rotation.y = params.Yaw * Math.PI / 180.0;
+    }
+
+    // Rotate all ailerons
+    if (top_left) {
+    	top_left.rotation.x = -params.Roll * Math.PI / 180.0;
+    }
+    if (top_right) {
+    	top_right.rotation.x = params.Roll * Math.PI / 180.0;
+    }
+    if (bottom_left) {
+    	bottom_left.rotation.x = -params.Roll * Math.PI / 180.0;
+    }
+    if (bottom_right) {
+    	bottom_right.rotation.x = params.Roll * Math.PI / 180.0;
+    }
 }
