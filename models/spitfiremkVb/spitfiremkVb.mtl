@@ -1,8 +1,8 @@
-# Blender MTL File: 'spit.blend'
+# Blender MTL File: 'None'
 # Material Count: 5
 
 newmtl Glass
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
@@ -11,8 +11,8 @@ Ni 1.000000
 d 0.541667
 illum 2
 
-newmtl Material
-Ns 96.078431
+newmtl Material.001
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
@@ -23,7 +23,7 @@ illum 2
 map_Kd textures/spit_vb_color_highres.jpg
 
 newmtl Material_NONE
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
@@ -34,7 +34,7 @@ illum 2
 map_Kd textures/spit_vb_color_highres.jpg
 
 newmtl Pilot
-Ns 96.078431
+Ns 94.117647
 Ka 1.000000 1.000000 1.000000
 Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
@@ -42,15 +42,15 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd  textures/spit_vb_pilot_color.jpg
+map_Kd textures/spit_vb_pilot_color.jpg
 
 newmtl PropSpin
-Ns 96.078431
+Ns 94.117647
 Ka 0.312500 0.312500 0.312500
 Kd 0.640000 0.640000 0.640000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 0.322917
-illum 0
+illum 2
 map_Kd textures/spit_vb_propblur_color.jpg
